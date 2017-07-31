@@ -1,0 +1,14 @@
+<h2><B>{{title}}</B></h2>
+
+<label>Existing users are :</label><br>
+
+<div *ngFor="let user of userList; let currentElementIndex=index">
+    <p [ngStyle]="{'color':getTextColor(currentElementIndex)}"> {{user}}</p>
+</div>
+
+<button (click)="showHide()" >Show / Hide Info</button>
+<button (click)="showAlertMsgToParent()">Show Alert</button> 
+<p *ngIf = "showViewStatus" >
+    {{message}}
+</p>
+

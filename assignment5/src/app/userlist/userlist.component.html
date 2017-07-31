@@ -1,0 +1,11 @@
+<h2><B>{{title}}</B></h2>
+
+<label>Existing users are :</label><br>
+
+<div *ngFor="let user of users; let currentElementIndex=index">
+    <p [ngStyle]="{'color':getTextColor(currentElementIndex)}"> {{user}}</p>
+</div>
+
+ 
+
+

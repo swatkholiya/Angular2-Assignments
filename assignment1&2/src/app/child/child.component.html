@@ -1,0 +1,38 @@
+<header>
+  <B><h3>****Enter User Details****</h3></B>
+</header>
+
+<div>
+  <table>
+
+    <tr>
+      <td>
+        <label>Enter user name:</label>
+        <input type="text" (input)="uname = $event.target.value" />
+      </td>
+    </tr>
+
+    <tr>
+      Entered user name : {{uname}}
+    </tr>
+
+    <tr>
+      <td>
+        <label>Enter user email:</label>
+        <input type="text" [(ngModel)]="email" />
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        Entered user email is {{email}}
+      </td>
+    </tr>
+
+  </table>
+
+</div>
+
+<p>
+  {{title}}
+</p>
